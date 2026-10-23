@@ -1,0 +1,11 @@
+:root{
+  /* 2026 direction: hairlines, not shadows. Depth comes from a slightly lighter ink surface
+     and a 1px hairline. The only blurs are the frosted nav and caption pills over images. */
+  --shadow-card:none;
+  --shadow-card-hover:none;
+  --shadow-fab:none;
+  --shadow-fab-hover:none;
+  --ring:inset 0 0 0 1px var(--hair); /* @kind other */   /* hairline drawn inside a tile */
+  --blur-glass:blur(18px); /* @kind other */
+  --blur-fab:blur(10px); /* @kind other */
+}

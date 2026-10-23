@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Layout and components · NPC Style Guide</title>
+<meta name="description" content="The parts the site is built from.">
+<meta name="theme-color" content="#07101F">
+<link rel="icon" href="img/mark-nebtune-gold.png">
+<link rel="stylesheet" href="ds/styles.css">
+<link rel="stylesheet" href="guide.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav-bar"><div class="nav">
+  <a class="brand" href="./"><span class="tile"><img src="img/mark-nebtune-gold.png" alt=""></span>NPC <small>Style guide</small></a>
+  <a class="pill dl" href="STYLE-GUIDE.md" download>Download .md</a>
+  <button class="menu-btn" aria-label="Open chapters" data-open-menu><span></span><span></span><span></span></button>
+</div></header>
+<dialog class="sheet" id="menu" aria-label="Chapters"><div class="sheet-in">
+  <button class="pill sheet-close" data-close-menu>Close</button>
+  <ol class="toc">
+<li class="grp">Start</li>
+<li><a href="./"><span class="n">—</span>Overview</a></li>
+<li><a href="brief.html"><span class="n">00</span>Creative brief</a></li>
+<li class="grp">Strategy</li>
+<li><a href="story.html"><span class="n">01</span>Brand story</a></li>
+<li><a href="strategy.html"><span class="n">02</span>Strategy</a></li>
+<li><a href="pyramid.html"><span class="n">03</span>Brand pyramid</a></li>
+<li><a href="voice.html"><span class="n">04</span>Voice and tone</a></li>
+<li class="grp">Identity</li>
+<li><a href="logo.html"><span class="n">05</span>Logo</a></li>
+<li><a href="colour.html"><span class="n">06</span>Colour</a></li>
+<li><a href="type.html"><span class="n">07</span>Typography</a></li>
+<li><a href="motion.html"><span class="n">08</span>Pattern and motion</a></li>
+<li><a href="imagery.html"><span class="n">09</span>Imagery and icons</a></li>
+<li class="grp">System</li>
+<li><a href="system.html" aria-current="page"><span class="n">10</span>Layout and components</a></li>
+<li><a href="channels.html"><span class="n">11</span>Channels</a></li>
+<li><a href="governance.html"><span class="n">12</span>AI and governance</a></li>
+<li><a href="downloads.html"><span class="n">13</span>Downloads and contact</a></li>
+</ol>
+</div></dialog>
+<div class="shell">
+  <aside class="side" aria-label="Chapters"><ol class="toc">
+<li class="grp">Start</li>
+<li><a href="./"><span class="n">—</span>Overview</a></li>
+<li><a href="brief.html"><span class="n">00</span>Creative brief</a></li>
+<li class="grp">Strategy</li>
+<li><a href="story.html"><span class="n">01</span>Brand story</a></li>
+<li><a href="strategy.html"><span class="n">02</span>Strategy</a></li>
+<li><a href="pyramid.html"><span class="n">03</span>Brand pyramid</a></li>
+<li><a href="voice.html"><span class="n">04</span>Voice and tone</a></li>
+<li class="grp">Identity</li>
+<li><a href="logo.html"><span class="n">05</span>Logo</a></li>
+<li><a href="colour.html"><span class="n">06</span>Colour</a></li>
+<li><a href="type.html"><span class="n">07</span>Typography</a></li>
+<li><a href="motion.html"><span class="n">08</span>Pattern and motion</a></li>
+<li><a href="imagery.html"><span class="n">09</span>Imagery and icons</a></li>
+<li class="grp">System</li>
+<li><a href="system.html" aria-current="page"><span class="n">10</span>Layout and components</a></li>
+<li><a href="channels.html"><span class="n">11</span>Channels</a></li>
+<li><a href="governance.html"><span class="n">12</span>AI and governance</a></li>
+<li><a href="downloads.html"><span class="n">13</span>Downloads and contact</a></li>
+</ol></aside>
+  <main id="main"><div class="wrap">
+<header class="page-head"><p class="label">10 · System</p><h1 class="title">Layout and components. <span class="mute">Phone first.</span></h1><p class="lede">Hairlines, not shadows. Soft cards, pill controls.</p></header>
+<section class="blk"><p class="live">Screen only</p><h2>Your viewport, measured.</h2><p class="sub">The layout responds at 760, 860 and 1000px. Resize the window and watch.</p>
+<div class="card vp"><p class="big vp-w">—</p><p class="vp-bp label">—</p><div class="vp-bar"><span style="left:0">375</span><span style="left:calc(760/1440*100%)">760</span><span style="left:calc(860/1440*100%)">860</span><span style="left:calc(1000/1440*100%)">1000</span><span style="left:calc(1240/1440*100%)">1240</span><i class="vp-mark"></i></div></div></section>
+<section class="blk rv"><h2>Frame and spacing.</h2>
+<div class="tbl"><table><tr><th>Token</th><th>Value</th><th>Use</th></tr>
+<tr><td>Container</td><td><code>1240px</code></td><td>Max content width</td></tr>
+<tr><td>Gutter</td><td><code>clamp(20px, 5vw, 96px)</code></td><td>Side padding; 20px on phones</td></tr>
+<tr><td>Section padding</td><td><code>clamp(72px, 12vh, 160px)</code></td><td>Top and bottom of every section</td></tr>
+<tr><td>Nav</td><td><code>64px</code></td><td>Frosted, sticky</td></tr>
+<tr><td>Tap target</td><td><code>44px</code></td><td>Minimum</td></tr>
+<tr><td>Spacing ladder</td><td><code>8 · 12 · 16 · 24 · 32 · 40 · 64</code></td><td>Every gap</td></tr>
+<tr><td>Radii</td><td><code>20 · 14 · 8 · 999</code></td><td>Cards · photo tiles · N tile · pills and buttons</td></tr>
+<tr><td>Breakpoints</td><td><code>760 · 860 · 1000</code></td><td>Design starts at 375</td></tr></table></div>
+<div class="ladder">
+<span style="--s:8px">8</span><span style="--s:12px">12</span><span style="--s:16px">16</span><span style="--s:24px">24</span><span style="--s:32px">32</span><span style="--s:40px">40</span><span style="--s:64px">64</span></div></section>
+<section class="blk rv"><h2>Surfaces.</h2><p class="sub">Depth comes from a lighter ink and a 1px hairline. No drop shadows, no grain. Blur only on the nav and caption pills.</p>
+<div class="grid g3"><div class="card"><p class="label">Card · 20px</p><p>Ink 3 → Ink 2, one hairline.</p></div><div class="card" style="border-radius:14px;padding:0;overflow:hidden"><img src="img/work/lego-1.webp" alt="LEGO Batman layout" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;width:100%"></div><div class="card" style="background:rgb(7 16 31/.82);backdrop-filter:blur(18px)"><p class="label">Frosted · nav only</p><p>rgb(7 16 31 / .82) + blur 18px.</p></div></div></section>
+<section class="blk rv"><h2>Buttons and pills.</h2>
+<div class="controls"><a class="pill gold" href="#">Book a call</a><a class="pill" href="#">See what we do</a><span class="pill sm">Brand</span><span class="pill sm" style="border-color:#3E7BE0;color:#B9D0F7">Web</span><span class="pill sm" style="border-color:#6C5CE7;color:#A79BF5">AI</span></div>
+<p class="faint">Every button is a pill. One gold button per view. Press scales to .97.</p></section>
+<section class="blk rv"><h2>Four ways in.</h2><p class="sub">The offerings tile: 2×2, each in its own colour. Swipe rail on phones.</p>
+<div class="quad">
+<div class="q" style="--g:#2A1E06;--c:#F5D97A"><p class="label">Brand</p><p class="stmt">Look the part.</p><p>Logos · Brand strategy · Guidelines · Pitch decks</p></div>
+<div class="q" style="--g:#0B1C3A;--c:#B9D0F7"><p class="label">Web</p><p class="stmt">Be found.</p><p>Web design · Design systems · SEO & analytics · Mobile-first builds</p></div>
+<div class="q" style="--g:#140F33;--c:#A79BF5"><p class="label">AI</p><p class="stmt">Work less.</p><p>Automations · Assistants · Knowledge bases · Team training</p></div>
+<div class="q prod" style="--g:#07101F;--c:#DDB84A"><p class="label">Product</p><p class="stmt">Ship it.</p><p>Product strategy · UX & prototypes · Roadmaps · Launch</p></div>
+</div></section>
+<section class="blk rv"><h2>Two ways to buy.</h2>
+<div class="grid g2"><div class="card lat"><p class="label">01 · Project</p><h3>Start with one project.</h3><p>Fixed price, fixed scope, one document.</p></div><div class="card gold"><p class="label">02 · Retainer · Recommended</p><h3>Stay on retainer.</h3><p>Your fractional brand, web, AI and product team, monthly.</p></div></div></section>
+<section class="blk rv"><h2>Proof strip.</h2><div class="grid g3 g2m stats"><div><p class="big" data-count="40">40+</p><p class="label">Brands</p></div><div><p class="big" data-count="10">10+</p><p class="label">Years</p></div><div><p class="big" data-count="4" data-plain>4</p><p class="label">Disciplines</p></div></div></section>
+<section class="blk rv"><h2>Forms.</h2><p class="sub">48px pill inputs, gold focus ring, label above. (New rule D-11.)</p>
+<form class="grid g2" onsubmit="return false"><label><span class="label" style="display:block;margin-bottom:8px">Name</span><input class="field" placeholder="Your name"></label><label><span class="label" style="display:block;margin-bottom:8px">Email</span><input class="field" type="email" placeholder="you@company.com"></label></form></section>
+<section class="blk rv"><h2>Accessibility.</h2><ul class="dash"><li>WCAG 2.2 AA target; skip link on every page</li><li>Visible gold focus ring, 2px offset</li><li>44px tap targets; no horizontal scroll, ever</li><li>Reduced motion stops everything; content visible without JS</li><li>Offering colours always carry their name too</li></ul></section>
+
+  <nav class="pager" aria-label="Pages"><a href="imagery.html"><span>Previous</span><b>Imagery and icons</b></a><a class="next" href="channels.html"><span>Next</span><b>Channels</b></a></nav>
+  </div></main>
+</div>
+<footer class="colo"><span>© 2026 Nabil Pervez Consulting · Built on honesty. Driven by excellence.</span><span>Style guide v1.0 · 23 Oct 2026 · Brand · Web · AI · Product</span></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="guide.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+:root{
+  /* ── Ink (primary neutral ramp, cool navy-black) ─────────────── */
+  --ink-950:#07101F;   /* resume page ground */
+  --ink-900:#0B1526;
+  --ink-850:#0C1829;   /* card surface, resume --bg-card */
+  --ink-880:#0D1522;   /* brand-card ground (measured from assets/brand-card-lockup.png) */
+  --ink-800:#131921;   /* business-card ink (print master) */
+  --ink-700:#2C2E35;   /* business-card secondary panel */
+  --ink-600:#3A4459;
+  --ink-500:#5E718F;   /* muted text */
+  --ink-300:#8D9CB4;
+  --ink-100:#C6D0E0;
+  --ink-50:#E2EAF4;    /* primary text on ink */
+
+  /* ── Paper (light theme ramp) ────────────────────────────────── */
+  --paper-50:#F8FBFF;
+  --paper-100:#EEF2FA;
+  --paper-200:#DEE5F0;
+
+  /* ── Gold / Champagne (brand accent) ────────────────────────── */
+  --gold-100:#F5D97A;
+  --gold-200:#F0CC6A;  /* --gold-bright */
+  --gold-300:#DDB84A;  /* screen brand gold */
+  --gold-400:#C8A84C;
+  --gold-500:#AB9563;  /* CHAMPAGNE — master gold, measured from the pattern + lockup artwork */
+  --gold-550:#AC9760;  /* champagne as it appears in the 3.5×2 card PDF */
+  --gold-600:#C88B20;
+  --gold-700:#9A6A10;  /* light-theme gold, AA on paper */
+  --gold-800:#8A5C08;
+
+  /* ── Legacy Nebtune mark ────────────────────────────────────── */
+  --teal-500:#48A3C2;
+
+  /* ── Semantic aliases (dark is the default theme; [data-theme="dark"]
+        below re-states them so an explicit dark scope also resolves) ──── */
+  --bg:var(--ink-950);
+  --bg-card:var(--ink-880);      /* 2026: #0D1522 raised surface */
+  --bg-tile:#121C2C;             /* tile and card tops */
+  --bg-glass:rgba(7,16,31,.78);
+  --bg-inset:rgba(255,255,255,.02);
+  --text:var(--ink-50);
+  --text-muted:var(--ink-300);   /* 2026: body copy and the grey half of two-tone headlines */
+  --text-faint:var(--ink-500);   /* captions, unlit words, client names at rest */
+  --text-brand:var(--gold-300);
+  --text-on-gold:#07101F;
+  --border:#1C2638;              /* 2026: neutral ink hairline (was gold-tinted) */
+  --border-strong:#26324A;       /* pills, buttons, focusable outlines */
+  --gold:var(--gold-300);
+  --gold-bright:var(--gold-200);
+  --gold-dim:rgba(220,180,80,.13);
+  --label:var(--gold-500);       /* uppercase labels */
+  --link:var(--gold-200);
+  --link-hover:var(--ink-50);
+  --focus-ring:rgba(220,180,80,.55);
+
+  /* ── Brand gradients & sheen ────────────────────────────────── */
+  /* ── Offering colours (2026) ────────────────────────────────────
+        The one sanctioned exception to "one accent": each offering owns a hue family,
+        so a tile, pill, dot or rail border says which service it is. Colour = meaning,
+        never decoration. Product is drawn as a gold-hairline wireframe on ink. */
+  --brand-a:#DDB84A; --brand-b:#C88B20; --brand-c:#F5D97A; --brand-bg:#2A1E06;
+  --web-a:#3E7BE0;   --web-b:#7FA8F0;   --web-c:#B9D0F7;   --web-bg:#0B1C3A;
+  --ai-a:#6C5CE7;    --ai-b:#5FD3E8;    --ai-c:#A79BF5;    --ai-bg:#140F33;
+  --product-a:#DDB84A; --product-bg:var(--ink-950);
+
+  /* Hairline names used by the homepage */
+  --hair:var(--border); --hair-2:var(--border-strong);
+
+  --grad:linear-gradient(120deg,#F5D97A 0%,#DDB84A 40%,#C88B20 75%,#E8B840 100%); /* @kind color */
+  --grad-text:linear-gradient(120deg,#F5D97A 0%,#DDB84A 40%,#C88B20 75%,#E8B840 100%); /* @kind color */
+  --shine:linear-gradient(90deg,transparent 0%,rgba(255,220,100,.22) 50%,transparent 100%); /* @kind color */
+  --grad-champagne:linear-gradient(120deg,#C9B489 0%,#AC9760 55%,#8E7A45 100%); /* @kind color */
+  --protect-bottom:linear-gradient(to top,var(--ink-950) 0%,rgba(7,16,31,.85) 45%,transparent 100%); /* @kind color */
+  --noise:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"); /* @kind color */
+}
+
+[data-theme="light"]{
+  --bg:var(--paper-100);
+  --bg-card:var(--paper-50);
+  --bg-glass:rgba(238,242,250,.84);
+  --bg-inset:rgba(13,24,41,.03);
+  --text:#0D1829;
+  --text-muted:#6A7A96;
+  --text-brand:var(--gold-700);
+  --border:rgba(13,24,41,.12);   /* 2026: neutral hairline on paper */
+  --border-strong:rgba(13,24,41,.22);
+  --gold:var(--gold-700);
+  --gold-bright:#B07C18;
+  --gold-dim:rgba(160,110,10,.09);
+  --link:var(--gold-700);
+  --link-hover:#0D1829;
+  --grad:linear-gradient(120deg,#C89020 0%,#8A5C08 50%,#B07820 100%); /* @kind color */
+  --grad-text:linear-gradient(120deg,#C89020 0%,#8A5C08 60%,#B07820 100%); /* @kind color */
+  --protect-bottom:linear-gradient(to top,var(--paper-100) 0%,rgba(238,242,250,.85) 45%,transparent 100%); /* @kind color */
+}
+
+/* Explicit dark scope — same values as :root, so pages that set data-theme="dark"
+   (rather than relying on the default) get the ink pattern ground. */
+[data-theme="dark"]{
+  --bg:var(--ink-950);
+  --bg-card:var(--ink-880);      /* 2026: #0D1522 raised surface */
+  --bg-tile:#121C2C;             /* tile and card tops */
+  --bg-glass:rgba(7,16,31,.78);
+  --bg-inset:rgba(255,255,255,.02);
+  --text:var(--ink-50);
+  --text-muted:var(--ink-300);   /* 2026: body copy and the grey half of two-tone headlines */
+  --text-faint:var(--ink-500);   /* captions, unlit words, client names at rest */
+  --text-brand:var(--gold-300);
+  --border:#1C2638;              /* 2026: neutral ink hairline (was gold-tinted) */
+  --border-strong:#26324A;       /* pills, buttons, focusable outlines */
+  --gold:var(--gold-300);
+  --gold-bright:var(--gold-200);
+  --gold-dim:rgba(220,180,80,.13);
+  --label:var(--gold-500);       /* uppercase labels */
+  --link:var(--gold-200);
+  --link-hover:var(--ink-50);
+  --grad:linear-gradient(120deg,#F5D97A 0%,#DDB84A 40%,#C88B20 75%,#E8B840 100%); /* @kind color */
+  --grad-text:linear-gradient(120deg,#F5D97A 0%,#DDB84A 40%,#C88B20 75%,#E8B840 100%); /* @kind color */
+  --protect-bottom:linear-gradient(to top,var(--ink-950) 0%,rgba(7,16,31,.85) 45%,transparent 100%); /* @kind color */
+}

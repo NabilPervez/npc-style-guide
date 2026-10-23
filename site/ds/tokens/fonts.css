@@ -1,0 +1,6 @@
+/* NPC webfonts — 2026 direction: Outfit only, at the three weights the system uses.
+   Prata stays only for the NABIL PERVEZ wordmark lockup (the `type` Wordmark variant).
+   Cormorant Garamond was retired on 2026-10-23 and is no longer loaded.
+   CDN @import because no font binaries were supplied; drop .woff2 files into assets/fonts/ and
+   replace this with @font-face rules to self-host. */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Prata&display=swap");

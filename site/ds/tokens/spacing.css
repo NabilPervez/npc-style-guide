@@ -1,0 +1,25 @@
+:root{
+  /* Spacing ladder — 2026 direction: 8 / 12 / 16 / 24 / 32 / 40 / 64. Old step names kept, remapped. */
+  --sp-1:4px; --sp-2:8px; --sp-3:8px; --sp-4:12px; --sp-5:12px;
+  --sp-6:16px; --sp-7:16px; --sp-8:24px; --sp-9:24px; --sp-10:24px;
+  --sp-12:32px; --sp-14:32px; --sp-16:40px; --sp-20:40px; --sp-24:64px;
+  --sp-28:64px; --sp-32:64px; --sp-40:80px;
+
+  /* Layout frame */
+  --container:1240px; /* @kind spacing */
+  --gutter:clamp(20px,5vw,96px); /* @kind spacing */          /* side padding; 20px on phones */
+  --section-pad:clamp(72px,12vh,160px); /* @kind spacing */   /* top and bottom of every section */
+  --head-gap:40px; /* @kind spacing */                        /* section header to content (64 on desktop) */
+  --nav-h:64px; /* @kind spacing */
+  --tap:44px; /* @kind spacing */                             /* minimum tap target */
+
+  /* Old names, remapped */
+  --page-max:var(--container); /* @kind spacing */
+  --page-pad:var(--gutter); /* @kind spacing */
+  --page-pad-mobile:20px; /* @kind spacing */
+  --sidebar-w:260px; /* @kind spacing */
+  --grid-gap:64px; /* @kind spacing */
+  --card-pad:28px 24px; /* @kind spacing */
+  --card-gap:12px; /* @kind spacing */
+  --section-gap:var(--section-pad); /* @kind spacing */
+}

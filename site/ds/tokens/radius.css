@@ -1,0 +1,11 @@
+:root{
+  /* 2026 direction: soft cards, pill controls. */
+  --radius:20px;       /* cards, tiles, step cards: the default */
+  --radius-tile:14px;  /* photo tiles in reels, portraits */
+  --radius-sm:999px;   /* tags and pills (were 5px) */
+  --radius-md:999px;   /* buttons (were 6px): every button is a pill */
+  --radius-pill:999px;
+  --radius-round:50%;
+  --radius-mark:8px;   /* the small N tile in the nav */
+  --hairline:1px; /* @kind spacing */
+}

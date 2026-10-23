@@ -1,0 +1,19 @@
+*,*::before,*::after{box-sizing:border-box}
+html{font-size:var(--font-root);scroll-behavior:smooth}
+body{margin:0;font:var(--text-body);background:var(--bg);color:var(--text);line-height:var(--lh-body);-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none;transition:color var(--dur-fast)}
+a:hover{color:var(--link-hover)}
+:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+.npc-grain::before{content:'';position:fixed;inset:0;background-image:var(--noise);background-size:180px;pointer-events:none;z-index:0;opacity:.55}
+.npc-gold-text{background:var(--grad-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;background-size:200% auto;animation:npc-shimmerText 4s linear infinite}
+.npc-pattern{position:relative;isolation:isolate}
+.npc-pattern::before{content:'';position:absolute;inset:0;background-image:var(--pattern-gold);background-size:var(--pattern-tile) auto;background-repeat:repeat;opacity:var(--pattern-opacity);pointer-events:none;z-index:-1}
+.npc-pattern-subtle::before{opacity:var(--pattern-opacity-subtle)}
+/* 2026 helpers */
+.npc-label{font:var(--text-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--label)}
+.npc-muted{color:var(--text-muted)}
+.npc-two-tone .npc-muted{color:var(--text-muted)}
+.npc-section{padding-block:var(--section-pad);border-top:1px solid var(--hair)}
+.npc-wrap{max-width:calc(var(--container) + var(--gutter) * 2);margin:0 auto;padding-inline:var(--gutter)}
+h1,h2,h3{font-family:var(--font-sans);font-weight:var(--fw-display);letter-spacing:var(--ls-display);text-wrap:balance}
+p{text-wrap:pretty}

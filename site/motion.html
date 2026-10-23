@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pattern and motion · NPC Style Guide</title>
+<meta name="description" content="The lattice, alive.">
+<meta name="theme-color" content="#07101F">
+<link rel="icon" href="img/mark-nebtune-gold.png">
+<link rel="stylesheet" href="ds/styles.css">
+<link rel="stylesheet" href="guide.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav-bar"><div class="nav">
+  <a class="brand" href="./"><span class="tile"><img src="img/mark-nebtune-gold.png" alt=""></span>NPC <small>Style guide</small></a>
+  <a class="pill dl" href="STYLE-GUIDE.md" download>Download .md</a>
+  <button class="menu-btn" aria-label="Open chapters" data-open-menu><span></span><span></span><span></span></button>
+</div></header>
+<dialog class="sheet" id="menu" aria-label="Chapters"><div class="sheet-in">
+  <button class="pill sheet-close" data-close-menu>Close</button>
+  <ol class="toc">
+<li class="grp">Start</li>
+<li><a href="./"><span class="n">—</span>Overview</a></li>
+<li><a href="brief.html"><span class="n">00</span>Creative brief</a></li>
+<li class="grp">Strategy</li>
+<li><a href="story.html"><span class="n">01</span>Brand story</a></li>
+<li><a href="strategy.html"><span class="n">02</span>Strategy</a></li>
+<li><a href="pyramid.html"><span class="n">03</span>Brand pyramid</a></li>
+<li><a href="voice.html"><span class="n">04</span>Voice and tone</a></li>
+<li class="grp">Identity</li>
+<li><a href="logo.html"><span class="n">05</span>Logo</a></li>
+<li><a href="colour.html"><span class="n">06</span>Colour</a></li>
+<li><a href="type.html"><span class="n">07</span>Typography</a></li>
+<li><a href="motion.html" aria-current="page"><span class="n">08</span>Pattern and motion</a></li>
+<li><a href="imagery.html"><span class="n">09</span>Imagery and icons</a></li>
+<li class="grp">System</li>
+<li><a href="system.html"><span class="n">10</span>Layout and components</a></li>
+<li><a href="channels.html"><span class="n">11</span>Channels</a></li>
+<li><a href="governance.html"><span class="n">12</span>AI and governance</a></li>
+<li><a href="downloads.html"><span class="n">13</span>Downloads and contact</a></li>
+</ol>
+</div></dialog>
+<div class="shell">
+  <aside class="side" aria-label="Chapters"><ol class="toc">
+<li class="grp">Start</li>
+<li><a href="./"><span class="n">—</span>Overview</a></li>
+<li><a href="brief.html"><span class="n">00</span>Creative brief</a></li>
+<li class="grp">Strategy</li>
+<li><a href="story.html"><span class="n">01</span>Brand story</a></li>
+<li><a href="strategy.html"><span class="n">02</span>Strategy</a></li>
+<li><a href="pyramid.html"><span class="n">03</span>Brand pyramid</a></li>
+<li><a href="voice.html"><span class="n">04</span>Voice and tone</a></li>
+<li class="grp">Identity</li>
+<li><a href="logo.html"><span class="n">05</span>Logo</a></li>
+<li><a href="colour.html"><span class="n">06</span>Colour</a></li>
+<li><a href="type.html"><span class="n">07</span>Typography</a></li>
+<li><a href="motion.html" aria-current="page"><span class="n">08</span>Pattern and motion</a></li>
+<li><a href="imagery.html"><span class="n">09</span>Imagery and icons</a></li>
+<li class="grp">System</li>
+<li><a href="system.html"><span class="n">10</span>Layout and components</a></li>
+<li><a href="channels.html"><span class="n">11</span>Channels</a></li>
+<li><a href="governance.html"><span class="n">12</span>AI and governance</a></li>
+<li><a href="downloads.html"><span class="n">13</span>Downloads and contact</a></li>
+</ol></aside>
+  <main id="main"><div class="wrap">
+<header class="page-head"><p class="label">08 · Identity</p><h1 class="title">Pattern and motion. <span class="mute">Noticed, never showy.</span></h1><p class="lede">The circle lattice is the one ornament. Motion is slow and physical.</p></header>
+<section class="blk rv"><h2>The circle lattice.</h2><p class="sub">Interlocking circles, champagne #AB9563 at 1.3px, an 88px tile. Many disciplines, one system.</p>
+<div class="grid g3 g2m">
+<div class="card lat-demo" style="--o:1"><p class="label">Full · 100%</p></div>
+<div class="card lat-demo" style="--o:.28"><p class="label">Card · 18–28%</p></div>
+<div class="card lat-demo" style="--o:.12;filter:grayscale(1)"><p class="label">Hero dim · 12%</p></div>
+</div></section>
+
+<section class="blk"><p class="live">Screen only</p><h2>Nebtune backgrounds.</h2><p class="sub">Four looping 1920×1080 backgrounds for video, streams and slides. They run here at full fidelity. Pick one and tune it.</p>
+<div class="seg nb-seg" role="group" aria-label="Background">
+<button class="pill sm" aria-pressed="true" data-nb="wave">Wave</button><button class="pill sm" aria-pressed="false" data-nb="ripple">Ripple</button><button class="pill sm" aria-pressed="false" data-nb="tide">Tide</button><button class="pill sm" aria-pressed="false" data-nb="constellation">Constellation</button>
+</div>
+<div class="stage nb" style="margin-top:16px" data-kind="wave">
+  <div class="nb-muted"></div><div class="nb-fx"></div><div class="nb-noise"></div>
+  <img class="nb-n" src="img/mark-nebtune-gold.png" alt="">
+</div>
+<div class="controls">
+  <label class="ctl">Speed <input type="range" class="nb-speed" min="0.25" max="3" step="0.25" value="1"><output>1×</output></label>
+  <label class="ctl">Intensity <input type="range" class="nb-int" min="0.25" max="1.25" step="0.25" value="1"><output>1×</output></label>
+  <label class="ctl nb-extra" hidden>Rings <input type="range" class="nb-rings" min="1" max="4" step="1" value="2"><output>2</output></label>
+  <label class="ctl nb-extra2" hidden>Density <input type="range" class="nb-dens" min="6" max="60" step="1" value="28"><output>28</output></label>
+  <button class="pill sm nb-pause" aria-pressed="false">Pause</button>
+  <button class="pill sm nb-full">Full screen</button>
+</div>
+<div class="tbl"><table><tr><th>Name</th><th>Motion</th><th>Loop</th></tr>
+<tr><td>Wave</td><td>A diagonal gold band sweeps corner to corner</td><td>10s</td></tr>
+<tr><td>Ripple</td><td>Rings of gold expand from the centre (1–4 rings)</td><td>12s</td></tr>
+<tr><td>Tide</td><td>A band rises bottom to top while breathing</td><td>14s · breathe 7s</td></tr>
+<tr><td>Constellation</td><td>Lattice points flicker gold at random (6–60)</td><td>7–13s each</td></tr></table></div>
+<p class="faint">Ground #0D1522 · lattice 56px muted to 13% · gold lattice brightened (brightness 1.45, saturate 1.35) through an animated mask · noise at 55%. Grain lives only here, never on web pages (D-10).</p>
+</section>
+
+<section class="blk"><p class="live">Screen only</p><h2>Motion tokens, running.</h2><p class="sub">Every move the brand makes. Press replay.</p>
+<div class="grid g2">
+<div class="card mo"><p class="label">Reveal · 900ms · 30px rise · 140ms stagger</p><div class="mo-reveal"><span></span><span></span><span></span></div></div>
+<div class="card mo"><p class="label">Easing · cubic-bezier(.16, 1, .3, 1)</p><div class="mo-ease"><i class="e1"></i><i class="e2"></i></div><p class="faint" style="margin-top:12px">Gold: NPC easing. Grey: linear, for comparison.</p></div>
+<div class="card mo"><p class="label">Press · scale(.97)</p><button class="pill gold">Press me</button></div>
+<div class="card mo"><p class="label">Gold text shimmer · 6s</p><p class="stmt"><span class="shine shimmer">Done right.</span></p></div>
+<div class="card mo"><p class="label">N breathe · 6s</p><img class="breathe" src="img/mark-nebtune-gold.png" alt="" style="width:88px"></div>
+<div class="card mo"><p class="label">Drift loop · pauses on hover</p><div class="drift" tabindex="0" aria-label="Client names, drifting"><div class="drift-in"><span>Red Bull</span><span>LEGO</span><span>Coca-Cola</span><span>Riot Games</span><span>Cloud9</span><span>Paramount Pictures</span><span>EVO</span><span>OpTic Gaming</span><span>Red Bull</span><span>LEGO</span><span>Coca-Cola</span><span>Riot Games</span><span>Cloud9</span><span>Paramount Pictures</span><span>EVO</span><span>OpTic Gaming</span></div></div></div>
+</div>
+<div class="controls"><button class="pill sm mo-replay">Replay all</button><button class="pill sm" data-calm aria-pressed="false">Preview reduced motion</button></div>
+</section>
+<section class="blk rv"><h2>Motion rules.</h2><div class="tbl"><table><tr><th>Element</th><th>Spec</th></tr><tr><td>Easing</td><td><code>cubic-bezier(.16,1,.3,1)</code></td></tr><tr><td>Reveal</td><td>opacity 0→1 + 30px rise, 900ms, 140ms stagger</td></tr><tr><td>Hover</td><td>colour and opacity, 400–500ms</td></tr><tr><td>Press</td><td><code>scale(.97)</code></td></tr><tr><td>Hero rings</td><td>two rings ripple out over 12s, half a cycle apart</td></tr><tr><td>Gold N</td><td>breathes every 6s</td></tr><tr><td>Loops</td><td>drift slowly; pause on hover, focus and touch; pause button</td></tr><tr><td>Reduced motion</td><td>everything stops; loops become one static set</td></tr><tr><td>Retired</td><td>hover lift, shine sweep, sibling dimming</td></tr></table></div></section>
+
+  <nav class="pager" aria-label="Pages"><a href="type.html"><span>Previous</span><b>Typography</b></a><a class="next" href="imagery.html"><span>Next</span><b>Imagery and icons</b></a></nav>
+  </div></main>
+</div>
+<footer class="colo"><span>© 2026 Nabil Pervez Consulting · Built on honesty. Driven by excellence.</span><span>Style guide v1.0 · 23 Oct 2026 · Brand · Web · AI · Product</span></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="guide.js" defer></script>
+</body>
+</html>
