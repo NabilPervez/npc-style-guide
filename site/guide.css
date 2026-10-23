@@ -317,3 +317,4 @@ footer.colo{border-top:1px solid var(--border);padding:32px var(--gutter);displa
 @keyframes nbBreathe{0%,100%{opacity:.55}50%{opacity:1}}
 @keyframes nbFlicker{0%,100%{opacity:0}12%{opacity:1}30%{opacity:.15}38%,100%{opacity:0}}
 .no-anim *{animation:none!important}
+.sub-art:not(.ready)>.s-lock{display:block;width:min(320px,100%)}

@@ -90,7 +90,7 @@
   // Logo subtraction
   const sr = $('.sub-range');
   if (sr) {
-    const art = $('.sub-art'), out = sr.nextElementSibling, name = $('.sub-name');
+    const art = $('.sub-art'); art.classList.add('ready'); const out = sr.nextElementSibling, name = $('.sub-name');
     const draw = () => { const v = +sr.value; out.textContent = `${v}px`;
       const [cls, n] = v >= 280 ? ['s-lock', 'Master lockup'] : v >= 120 ? ['s-wm', 'N + wordmark'] : v >= 24 ? ['s-n', 'N mark'] : ['s-tile', 'N tile (favicon)'];
       [...art.children].forEach(c => { c.classList.toggle('on', c.classList.contains(cls)); c.style.width = c.classList.contains('s-tile') ? '' : `${v}px`; });
